@@ -3,7 +3,7 @@ const fetch = require("node-fetch");
 const { Headers } = fetch;
 
 // == Create a collection with an auto-generated UUID ==
-async function createCollection(chain, data){
+async function createCollection(data){
     // Form the request headers
     const reqHeader = new Headers();
     reqHeader.append("x-client-secret", process.env.API_KEY);
@@ -12,7 +12,7 @@ async function createCollection(chain, data){
 
     // Form the request body
     const reqBody = JSON.stringify({
-        "chain": chain, // https://docs.crossmint.io/create-and-send-nfts/nft-minting-api
+        "chain": data.collection_network, // https://docs.crossmint.io/create-and-send-nfts/nft-minting-api
         "metadata": { // https://docs.crossmint.io/create-and-send-nfts/nft-minting-api/metadata
             "name": data.collection_name,
             "description": data.collection_description,
