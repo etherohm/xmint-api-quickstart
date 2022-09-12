@@ -32,7 +32,7 @@ async function mint(data, collectionName = "default"){
 
     // Interpret the response
     let mint_result;
-    await fetch(process.env.API_ENDPOINT + `default/nfts/`, requestOptions)
+    await fetch(process.env.API_ENDPOINT + `/default/nfts/`, requestOptions)
     .then(response => response.json())
     .then(result => mint_result = result)
     .catch(error => console.log('error', error));
