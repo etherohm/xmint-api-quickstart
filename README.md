@@ -1,4 +1,4 @@
-# Crossmint API quickstart repo
+# Crossmint API Quickstart - NodeJS
 
 Creating NFTs doesn't need to be hard. With Crossmint's Minting API, in one single REST https request you can create and deliver an NFT to a user. You pay for these NFTs with credit card, and it works even if the receiver doesn't have any cryptocurrency or crypto wallet.
 
