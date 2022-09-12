@@ -38,6 +38,8 @@ Currently I have 2 examples:
 1. `mintSingleNFT-NoCollection.js` - Creates a basic NFT object and mints it to the default crossmint collection. It will then check for a successful mint and inform you. This is the most basic form of invoking our API.
 2. `mintSpecificNFT-SpecificCollection.js` - This is a more complex version of the previous example. This script will create a named collection based off of collection object. It will wait until the contract is created and then mint a specific NFT to the contract invoking the idempotency guarantee. Once minted it will let you know it was successful.
 
+Feel free to create your own scripts! Add a loop to #2 with incrementing tokenId's and replicate launching a real collection! Mint 500 pictures of your dog? The world is yours! 
+
 # Any other examples? Usecases?
 
 Of course! We had an internal hackathon and created a few tools you can use to craft your own with. Please visit [our example projects][demos] page. Here is a tl;dr: twitter minting bot, discord minting bot, google sheets minting bot and a website that turns your selfie into an NFT!
@@ -50,6 +52,10 @@ If you get an issue with the imports, you can either swap them from `const {} = 
 # How can I reach someone real for help with this?
 
 You can always join our [discord][discord] and ask in the product support section or email us at support@crossmint.io
+
+# Got this for other languages?
+
+I *might* create this quickstart for other languages... Maybe you can do it for now, anon?
 
    [testnetkey]: <https://staging.crossmint.io/console/projects>
    [demos]: <https://docs.crossmint.io/create-and-send-nfts/nft-minting-api/example-projects>
