@@ -33,7 +33,7 @@ async function mintIdempotency(data, collectionName = "default"){
 
     // Interpret the response
     let mint_result;
-    await fetch(process.env.API_ENDPOINT + `${collectionName}/nfts/${data.nft_tokenId}`, requestOptions)
+    await fetch(process.env.API_ENDPOINT + `/${collectionName}/nfts/${data.nft_tokenId}`, requestOptions)
     .then(response => response.json())
     .then(result => mint_result = result)
     .catch(error => console.log('error', error));
